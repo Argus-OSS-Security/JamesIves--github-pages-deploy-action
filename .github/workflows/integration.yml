@@ -1,22 +1,23 @@
 name: Integration Tests 🧪
-on:
-  workflow_call:
-    inputs:
-      action-ref:
-        description: 'The github-pages-deploy-action ref (tag, branch, or SHA) to validate.'
-        required: false
-        type: string
-        default: 'v4'
-  workflow_dispatch:
-    inputs:
-      action-ref:
-        description: 'The github-pages-deploy-action ref (tag, branch, or SHA) to validate.'
-        required: false
-        type: string
-        default: 'v4'
-  schedule:
-    - cron: 30 15 * * 1
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_call:
+#     inputs:
+#       action-ref:
+#         description: 'The github-pages-deploy-action ref (tag, branch, or SHA) to validate.'
+#         required: false
+#         type: string
+#         default: 'v4'
+#   workflow_dispatch:
+#     inputs:
+#       action-ref:
+#         description: 'The github-pages-deploy-action ref (tag, branch, or SHA) to validate.'
+#         required: false
+#         type: string
+#         default: 'v4'
+#   schedule:
+#     - cron: 30 15 * * 1
+# 
 permissions:
   contents: write
 

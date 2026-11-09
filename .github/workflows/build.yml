@@ -1,15 +1,16 @@
 name: Unit Tests 🧪
-on:
-  pull_request:
-    branches:
-      - 'dev*'
-      - 'releases/v*'
-  push:
-    branches:
-      - '*'
-    tags-ignore:
-      - '*.*'
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#     branches:
+#       - 'dev*'
+#       - 'releases/v*'
+#   push:
+#     branches:
+#       - '*'
+#     tags-ignore:
+#       - '*.*'
+# 
 permissions:
   contents: read
 

@@ -1,17 +1,18 @@
 name: Release 🚀
 
-on:
-  workflow_dispatch:
-    inputs:
-      bump:
-        description: 'Version bump type'
-        required: true
-        type: choice
-        options:
-          - patch
-          - minor
-          - major
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+#     inputs:
+#       bump:
+#         description: 'Version bump type'
+#         required: true
+#         type: choice
+#         options:
+#           - patch
+#           - minor
+#           - major
+# 
 permissions:
   contents: read
 

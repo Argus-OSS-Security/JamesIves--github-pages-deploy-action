@@ -1,9 +1,10 @@
 name: Publish Sponsors to README 📣
-on:
-  workflow_dispatch:
-  schedule:
-    - cron: 30 15 * * 1,4
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+#   schedule:
+#     - cron: 30 15 * * 1,4
+# 
 permissions:
   contents: write
 

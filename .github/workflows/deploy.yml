@@ -1,7 +1,8 @@
 name: Deploy Code to Release Branch 🚀
-on:
-  workflow_dispatch:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+# 
 permissions:
   contents: write
 
